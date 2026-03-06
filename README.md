@@ -52,14 +52,16 @@ The goal of BuildBoard is to learn and implement:
 # Architecture Overview
 
 The application follows a typical full stack architecture.
-Browser
-↓
-React Frontend
-↓
-Node.js Backend API
-↓
-PostgreSQL Database
 
+```
+Browser
+   ↓
+React Frontend
+   ↓
+Node.js Backend API
+   ↓
+PostgreSQL Database
+```
 
 The frontend communicates with the backend through HTTP APIs, and the backend interacts with the PostgreSQL database to store and retrieve data.
 
@@ -67,21 +69,21 @@ The frontend communicates with the backend through HTTP APIs, and the backend in
 
 # Core Features (Version 1)
 
-### Authentication
+## Authentication
 - User signup
 - User login
 - Session management
 
-### Workspace Management
+## Workspace Management
 - Create workspace
 - View workspace dashboard
 
-### Project Management
+## Project Management
 - Create projects
 - View project list
 - Open project boards
 
-### Task Management
+## Task Management
 - Create tasks
 - Edit tasks
 - Assign tasks
@@ -89,11 +91,11 @@ The frontend communicates with the backend through HTTP APIs, and the backend in
 - Set due dates
 - Update task status
 
-### Collaboration
+## Collaboration
 - Add comments to tasks
 - View discussion history
 
-### Dashboard
+## Dashboard
 - Overview of projects
 - Task statistics
 - Tasks grouped by status
@@ -172,114 +174,116 @@ Install the following tools:
 
 ---
 
-## Clone the repository
+## Clone the Repository
 
+```bash
 git clone https://github.com/Ayush-Som/buildboard.git
 cd buildboard
+```
 
 ---
 
-## Start the database
+## Start the Database
 
 The PostgreSQL database runs inside Docker.
 
+```bash
 docker compose up -d
+```
 
-This starts the database container.
+---
 
-Database connection details
+## Database Connection Details
+
+```
 Host: localhost
 Port: 55432
 Database: buildboard
 User: buildboard
 Password: buildboard
-Project Structure
+```
+
+---
+
+# Project Structure
+
+```
 buildboard
 │
-├── client        # Frontend application (React)
+├── client/               # Frontend application (React)
 │
-├── server        # Backend API (Node.js + Express)
+├── server/               # Backend API (Node.js + Express)
 │
 ├── docker-compose.yml
 │
 ├── README.md
 │
 └── .gitignore
+```
 
-## Development Roadmap
+---
+
+# Development Roadmap
 
 The project is being developed in phases.
 
-Phase 1
-
+## Phase 1
 Project setup and environment configuration.
 
-Phase 2
-
+## Phase 2
 Frontend basics using HTML, CSS, JavaScript, and TypeScript.
 
-Phase 3
-
+## Phase 3
 Backend API development.
 
-Phase 4
-
+## Phase 4
 Database integration with PostgreSQL.
 
-Phase 5
-
+## Phase 5
 Authentication and authorization.
 
-Phase 6
-
+## Phase 6
 Full task management features.
 
-Phase 7
-
+## Phase 7
 UI improvements and testing.
 
-Phase 8
-
+## Phase 8
 Deployment and production readiness.
 
-## Learning Objectives
+---
+
+# Learning Objectives
 
 This project is intended to develop practical experience with:
 
-Building scalable web applications
+- Building scalable web applications
+- Designing relational database schemas
+- Writing clean backend APIs
+- Managing application state
+- Containerized development with Docker
+- Version control and collaboration with Git
 
-Designing relational database schemas
+---
 
-Writing clean backend APIs
-
-Managing application state
-
-Containerized development with Docker
-
-Version control and collaboration with Git
-
-Future Improvements
+# Future Improvements
 
 Possible future enhancements include:
 
-Real time task updates
+- Real time task updates
+- Email notifications
+- Team invitations
+- Activity feeds
+- File attachments
+- Advanced analytics
+- AI assisted task summaries
 
-Email notifications
+---
 
-Team invitations
+# Author
 
-Activity feeds
-
-File attachments
-
-Advanced analytics
-
-AI assisted task summaries
-
-Author
-
-Ayush Kumar Som
-Software Engineering (Honours) Graduate
-Melbourne, Australia
+Ayush Kumar Som  
+Software Engineering (Honours) Graduate  
+Melbourne, Australia  
 
 GitHub: https://github.com/Ayush-Som
