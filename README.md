@@ -178,7 +178,7 @@ Install the following tools:
 git clone https://github.com/Ayush-Som/buildboard.git
 cd buildboard
 
-Start the database
+## Start the database
 
 The PostgreSQL database runs inside Docker.
 
@@ -204,7 +204,8 @@ buildboard
 ├── README.md
 │
 └── .gitignore
-Development Roadmap
+
+## Development Roadmap
 
 The project is being developed in phases.
 
@@ -240,7 +241,7 @@ Phase 8
 
 Deployment and production readiness.
 
-Learning Objectives
+## Learning Objectives
 
 This project is intended to develop practical experience with:
 
