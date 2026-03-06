@@ -174,9 +174,10 @@ Install the following tools:
 
 ## Clone the repository
 
-```bash
 git clone https://github.com/Ayush-Som/buildboard.git
 cd buildboard
+
+---
 
 ## Start the database
 
